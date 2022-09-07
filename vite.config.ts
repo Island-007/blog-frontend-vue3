@@ -27,7 +27,7 @@ export default defineConfig({
     open: false,
     proxy: {
       '/api': {
-        target: '',
+        target: `${process.env.VUE_APP_BASE_API}`,
         changeOrigin: true,
         ws: false,
         rewrite:(pathStr) => pathStr.replace('/api','')
