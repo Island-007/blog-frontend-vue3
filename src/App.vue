@@ -4,19 +4,37 @@
 </script>
 
 <template>
-  <router-view />
+  <div class="app">
+    <vue-particles
+        class="particles"
+        color="#dedede"
+        :particleOpacity="0.7"
+        :particlesNumber="60"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      ></vue-particles>
+    <router-view />
+  </div>
+  
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.app {
+  width: 100%;
+  height: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.particles {
+  width: 100%;
+  height: 100%;
 }
 </style>
