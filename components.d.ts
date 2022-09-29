@@ -7,11 +7,17 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Button: typeof import('./src/components/Button/src/Button.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElRow: typeof import('element-plus/es')['ElRow']
     Header: typeof import('./src/components/Header/index.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Menu: typeof import('./src/components/Menu/index.vue')['default']
+    Modal: typeof import('./src/components/Modal/src/Modal.vue')['default']
+    Model: typeof import('./src/components/Modal/src/Model.vue')['default']
+    NestMenu: typeof import('./src/components/NestMenu/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Src: typeof import('./src/components/Modal/src/index.vue')['default']
   }
 }

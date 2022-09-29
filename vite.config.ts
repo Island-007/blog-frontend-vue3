@@ -10,9 +10,9 @@ export default defineConfig(({ mode }) => {
   
   return {
     /**
-  * 在生产中服务时的基本公共路径。
-  * @default '/'
-  */
+      * 在生产中服务时的基本公共路径。
+      * @default '/'
+    **/
     base: './',
     resolve: {
       alias: {
@@ -20,6 +20,7 @@ export default defineConfig(({ mode }) => {
         'assets': path.resolve(__dirname, './src/assets'),
         'pages': path.resolve(__dirname, './src/pages'),
         'components': path.resolve(__dirname, './src/components'),
+        'baseComponents': path.resolve(__dirname, './src/baseComponents'),
         'utils': path.resolve(__dirname, './src/utils'),
         'apis': path.resolve(__dirname, './src/apis')
       }

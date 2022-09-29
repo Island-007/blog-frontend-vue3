@@ -1,0 +1,32 @@
+/* 过渡 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.silde-leave-active {
+  transition: all 1s ease-out;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.slide-enter-from {
+  position: absolute;
+  right: -100%;
+}
+
+.slide-leave-to {
+  position: absolute;
+  left: -100%;
+}
